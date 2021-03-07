@@ -1,7 +1,7 @@
 #include "Arduino.h"
-#include "UltrasonicSensor.h"
+#include "HCSR04.hpp"
 
-UltrasonicSensor sensor1(9, 8);
+HCSR04 sensor1(9, 8);
 
 void setup() {
 		
