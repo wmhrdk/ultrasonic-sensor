@@ -3,6 +3,8 @@
 
 #include "Arduino.h"
 
+namespace HCSR04Sensor{
+
 class HCSR04{
 	
 	private:
@@ -16,5 +18,7 @@ class HCSR04{
 		void init();
 		int measureDistance();
 };
+
+}
 
 #endif

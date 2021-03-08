@@ -1,5 +1,7 @@
 #include "HCSR04.hpp"
 
+namespace HCSR04Sensor{
+
 HCSR04::HCSR04(byte trigger_pin, byte echo_pin) {
 	this->_trigger_pin = trigger_pin;
 	this->_echo_pin = echo_pin;
@@ -23,4 +25,6 @@ int HCSR04::measureDistance() {
 	this->_distance = (this->_duration * 0.034) / 2;
 
 	return this->_distance;
+}
+
 }
